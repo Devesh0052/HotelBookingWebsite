@@ -1,0 +1,78 @@
+.details{
+    color: black;
+}
+#bookId{
+    height: 35px;
+}
+body{
+    background:url('../images/img.jpg') no-repeat;
+    background-size:cover;
+}
+
+
+form {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+label{
+    font-size: 18px;
+}
+.button {
+    align-items: center;
+    position: relative;
+    color: blue;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding-top: 250px;
+    padding-left: 500px;
+
+}
+
+
+#CheckoutBtn ,#CancelBtn{
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+    background: green;
+    width: 180px;
+    height: 30px;
+}
+
+#CheckoutBtn:hover ,#CancelBtn:hover {
+
+    background: black;
+}
+
+@media(max-width :1000px) {
+    .container {
+        width: 100%;
+        padding: 0 1px 0 10px;
+        text-align: center;
+    }
+}
+
+@media(max-width :455px) {
+    .container {
+        width: 100%;
+        text-align: center;
+        padding: 0 1px 0 10px;
+    }
+}
+
+@media(max-width :1000px) {
+    .button {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+@media(max-width :600px) {
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}

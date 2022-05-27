@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik&family=Sniglet&display=swap');
+:root{
+    --Snigle-font:"Snigle",cursive;
+    --Rubik:"Rubik",cursive;
+    --bggradient:linear-gradient(
+        to bottom,
+        #050505,#110503);
+    --light-gray:rgba(255,255,255,0.5);
+}
+body{
+    background-color: lightgrey;
+}
+*{
+    box-sizing: border-box;
+}
+header
+{
+    overflow-x: hidden;
+}
+
+header a{
+    font-family: var(--Snigle-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+header{
+    background: var(--bggradient);
+}
+header .nav-item:last-child{
+    padding-right: 2.5em;
+}
+header .navbar-brand{
+    margin-left: 1%;
+    font-family: var(--Snigle-font);
+    font-size: 2.2em;
+    font-weight: bold;
+    color: rgb(253, 255, 255);
+    text-shadow: -2px -2px 3px slategray;
+}
+header .navbar-brand:hover{
+    text-shadow: 2px 2px 3px rgb(24, 6, 136);
+}
+header .nav-item{
+    padding-left: 2em;
+    font-size: 1.3em;
+}
+header .nav-link:hover{
+    color:gold;
+    
+}
+
+/* Navbar Style Ends Here.... */

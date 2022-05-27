@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <title>Registrationform</title>
+</head>
+<body>
+  {{>header}}
+  <br>
+  
+    <div class="container">
+      <div id="validate" style="background-color: red;color:white"></div>
+      <div id="error" style="background-color: red;color:white"></div>
+    <div class="title">Booking</div>
+    <div class="content">
+      
+      <form action="/bookings" method="POST" id="myform" autocomplete="off">
+        <div class="user-details">
+          <div class="input-box">
+            <label class="details" for="fname">First Name</label>
+            <input type="text" placeholder="Enter your First name" name="Fname" required>
+          </div>
+          <div class="input-box">
+            <label class="details" for="lname">Last Name</label>
+            <input type="text" placeholder="Enter your Last name" name="lname" >
+          </div>
+          <div class="input-box">
+            <label class="details" for="email">Email</label>
+            <input type="email" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <label class="details" for="mob"> Phone Number</label>
+            <input  placeholder="Enter your number" name="mob" required>
+          </div>
+          <div class="input-box">
+            <label class="details" for="check_in">Check in Date</label>
+            <input type="date" min="2050-01-01" onfocus="this.min=new Date().toISOString().split('T')[0]" id="checkIn" name="check_in"  required>
+          </div>
+          <div class="input-box">
+            <label class="details">Check out Date</label>
+            <input type="date" id="checkOut" onfocus="this.min=new Date().toISOString().split('T')[0]" name="check_out" onchange="validatedate();"  required >
+          </div>
+          <div class="input-box">
+            <label class="details" for="Room">Room Number</label>
+            <select id="dynamicroom" name="roomno" >
+            <!-- <input type="number" name="roomno" min="1" max="5"> -->
+            </select>
+            
+             
+             
+        </div>
+        
+        </div>
+        
+      </div>
+
+        <div class="button">
+          <input type="submit" value="Book Now">
+        </div>
+      </form>
+    </div>
+    
+  </div>
+  
+<script src="js/formvalidation.js"></script>
+
+  
+
+</body>
+</html>

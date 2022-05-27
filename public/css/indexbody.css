@@ -1,0 +1,83 @@
+/* Welcome Style */
+
+body{
+    background-color: aquamarine;
+}
+ 
+.welcome-body{
+    display:flex;
+    min-height:50px;
+    align-items: center;
+   justify-content:center;
+
+  
+ 
+}
+.container-welcome{
+    position: relative;
+   width:100%;
+    display:flex;
+
+    align-items:center;
+   justify-content:space-between;
+   flex-wrap: wrap;
+
+}
+.container-welcome .card{
+    position: relative;
+   max-width:100%;   
+   margin: 5px;
+   padding: 5px; 
+   display:flex;
+   
+   background: #ffff;
+}
+
+.container-welcome .card  .imgbx{
+    flex:0 0 150px;
+    max-width:150px;
+   
+}
+.container-welcome .card .imgbx img{
+max-width:100%;
+
+}
+.container-welcome .card .content{
+    margin-left:20px;
+    text-align: center;
+   
+}
+
+
+
+@media(max-width:768px){
+    .container-welcome{
+        flex-direction:column;
+    }
+    .container-welcome .card{
+        flex-direction:column;
+        max-width:350px;
+     
+        
+    }
+    .container-welcome .card .content{
+    margin-left:0px;
+
+ 
+}
+    .container-welcome .card .imgbx{
+        flex-direction:column;
+        max-width:350px;
+        padding-top: 10px;
+    }
+    
+.container-welcome .card .imgbx img{
+     max-width:100%;
+ 
+}
+}  
+
+
+.cards{
+   margin-bottom: 2%;
+}
